@@ -116,13 +116,6 @@ UTF-8编码序列0XEF 0xBB 0xBF总是被解释为U+FEFF（零宽度非换行空�
 本规范用黄色高亮的文本标识一致性声明，每个一致性声明都分配了一个这种格式的引用：\[MQTT-x.x.x-y\]。
 
 
-### 项目主页
-
-- [MQTT协议中文版](https://github.com/mcxiaoke/mqtt)
-
-
-
-
 ---
 - 作者：face
 - Github地址：https://github.com/facehai/thinking-framework-master
