@@ -43,8 +43,8 @@
     <td><a href="#">区块链</a></td>
   </tr>
   <tr>
-    <td>第 10 章: 项目实战</td>
-    <td><a href="#">项目实战</a></td>
+    <td>第 10 章: 运维工程师</td>
+    <td><a href="#">运维工程师</a></td>
   </tr>
 </table>
 
