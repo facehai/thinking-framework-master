@@ -2,17 +2,6 @@
 
 ## 1.1 MQTT协议的组织结构 Organization of MQTT
 
-本规范分为七个章节：
-
-- [第一章 – 介绍](01-Introduction.md)
-- [第二章 – MQTT控制报文格式](02-ControlPacketFormat.md)
-- [第三章 – MQTT控制报文](03-ControlPackets.md)
-- [第四章 – 操作行为](04-OperationalBehavior.md)
-- [第五章 – 安全](05-Security.md)
-- [第六章 – 使用WebSocket](06-WebSocket.md)
-- [第七章 – 一致性目标](07-Conformance.md)
-- [附录B – 强制性规范声明](08-AppendixB.md)
-
 ## 1.2 术语 Terminology
 
 本规范中用到的关键字 **必须** MUST，**不能** MUST NOT，**要求** REQUIRED，**将会** SHALL，**不会** SHALL NOT，**应该** SHOULD，**不应该** SHOULD NOT，**推荐** RECOMMENDED，**可以** MAY，**可选** OPTIONAL 都是按照 IETF RFC 2119 [\[RFC2119\]](#anchor-RFC2119) 中的描述解释。
