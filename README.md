@@ -2,7 +2,6 @@
 
 ### 一、《人人都是架构师》
 > 个人技术学习笔记 参考多个学习资源 包含个人理解与总结 不能保证完全专业正确性 如有错误欢迎提出 期待您的补充贡献！
-- 致大师：致自己
 
 ### 二、《境界》
 ![img.png](screenshot/20220111213123.png)
@@ -120,14 +119,6 @@
 
 ## 开源项目
 
-* MQTT WebClient: <https://github.com/mcxiaoke/mqtt-monitor>
-* Rx文档中文翻译: <https://github.com/mcxiaoke/RxDocs>
 * MQTT协议中文版: <https://github.com/mcxiaoke/mqtt>
-* Awesome-Kotlin: <https://github.com/mcxiaoke/awesome-kotlin>
-* Kotlin-Koi: <https://github.com/mcxiaoke/kotlin-koi>
-* Next公共组件库: <https://github.com/mcxiaoke/Android-Next>
-* PackerNg极速打包: <https://github.com/mcxiaoke/packer-ng-plugin>
-* Gradle渠道打包: <https://github.com/mcxiaoke/gradle-packer-plugin>
-* EventBus实现xBus: <https://github.com/mcxiaoke/xBus>
 
 ------
