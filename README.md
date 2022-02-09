@@ -60,52 +60,52 @@
 ### 六、目录
 <table>
   <tr>
-    <td>第 1 章: JAVA架构师</td>
+    <td>第一章: JAVA架构师</td>
     <td><a href="#">JAVA架构师</a></td>
   </tr>
   <tr>
-    <td>第 2 章: Python全栈</td>
+    <td>第二章: Python全栈</td>
     <td><a href="#">Python全栈</a></td>
   </tr>
   <tr>
-    <td>第 3 章: GO编程</td>
+    <td>第三章: GO编程</td>
     <td><a href="#">GO编程</a></td>
   </tr>
   <tr>
-    <td>第 4 章: 数据挖掘</td>
+    <td>第四章: 数据挖掘</td>
     <td><a href="#">数据挖掘</a></td>
   </tr>
   <tr>
-    <td>第 5 章: AI智能</td>
+    <td>第五章: AI智能</td>
     <td><a href="#">AI智能</a></td>
   </tr>
   <tr>
-    <td>第 6 章: 云原生</td>
+    <td>第六章: 云原生</td>
     <td><a href="#">云原生</a></td>
   </tr>
   <tr>
-    <td>第 7 章: 物联网</td>
+    <td>第七章: 物联网</td>
     <td><a href="#">物联网</a></td>
   </tr>
   <tr>
-    <td>第 8 章: 云计算</td>
+    <td>第八章: 云计算</td>
     <td><a href="#">云计算</a></td>
   </tr>
   <tr>
-    <td>第 9 章: 区块链</td>
+    <td>第九章: 区块链</td>
     <td><a href="#">区块链</a></td>
   </tr>
   <tr>
-    <td>第 10 章: 运维工程师</td>
+    <td>第十章: 运维工程师</td>
     <td><a href="#">运维工程师</a></td>
   </tr>
 
   <tr>
-    <td>第 11 章: 元宇宙</td>
+    <td>第十一章: 元宇宙</td>
     <td><a href="#">元宇宙</a></td>
   </tr>
   <tr>
-    <td>第 12 章: WEB3.0</td>
+    <td>第十二章: WEB3.0</td>
     <td><a href="#">WEB3.0</a></td>
   </tr>
 </table>
