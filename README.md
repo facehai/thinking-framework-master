@@ -100,6 +100,15 @@
     <td>第 10 章: 运维工程师</td>
     <td><a href="#">运维工程师</a></td>
   </tr>
+
+  <tr>
+    <td>第 11 章: 元宇宙</td>
+    <td><a href="#">元宇宙</a></td>
+  </tr>
+  <tr>
+    <td>第 12 章: WEB3.0</td>
+    <td><a href="#">WEB3.0</a></td>
+  </tr>
 </table>
 
 ### 三、推荐资源
