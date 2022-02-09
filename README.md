@@ -111,13 +111,23 @@
   </tr>
 </table>
 
-### 三、推荐资源
-- [Google机器学习速成课程](https://developers.google.cn/machine-learning/crash-course/)
-- [斯坦福大学公开课-机器学习的动机与应用 讲师：Andrew Ng](http://open.163.com/movie/2008/1/M/C/M6SGF6VB4_M6SGHFBMC.html)
-- [吴恩达机器学习](https://study.163.com/course/courseMain.htm?courseId=1004570029)
 
-### 四、参考
-- 百度百科、维基百科
-- [AiLearning](https://github.com/apachecn/AiLearning)
-- 引用相关大佬前辈
-    - [吴恩达 Andrew Ng](https://baike.baidu.com/item/%E5%90%B4%E6%81%A9%E8%BE%BE/9465313)
+------
+
+## 联系方式
+
+* Github: <https://github.com/facehai/thinking-framework-master>
+
+## 开源项目
+
+* MQTT WebClient: <https://github.com/mcxiaoke/mqtt-monitor>
+* Rx文档中文翻译: <https://github.com/mcxiaoke/RxDocs>
+* MQTT协议中文版: <https://github.com/mcxiaoke/mqtt>
+* Awesome-Kotlin: <https://github.com/mcxiaoke/awesome-kotlin>
+* Kotlin-Koi: <https://github.com/mcxiaoke/kotlin-koi>
+* Next公共组件库: <https://github.com/mcxiaoke/Android-Next>
+* PackerNg极速打包: <https://github.com/mcxiaoke/packer-ng-plugin>
+* Gradle渠道打包: <https://github.com/mcxiaoke/gradle-packer-plugin>
+* EventBus实现xBus: <https://github.com/mcxiaoke/xBus>
+
+------
