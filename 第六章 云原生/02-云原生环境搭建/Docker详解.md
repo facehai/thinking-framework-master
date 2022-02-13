@@ -12,7 +12,7 @@ Docker 让开发者可以打包他们的应用以及依赖包到一个可移植�
 一方面，云计算时代到来，使开发者不必为了追求效果而配置高额的硬件，Docker 改变了高性能必然高价格的思维定势。Docker 与云的结合，让云空间得到更充分的利用。不仅解决了硬件管理的问题，也改变了虚拟化的方式。
 
 ## Docker的架构
-![img.png](screenshot/202201180852.png)
+![202201180852.png](screenshot/202201180852.png)
 - **Docker daemon（ Docker守护进程）**
 > Docker daemon是一个运行在宿主机（ DOCKER-HOST）的后台进程。可通过 Docker客户端与之通信。
 
@@ -75,7 +75,7 @@ docker version
 注意：一般需要配置docker镜像加速器
 我们可以借助阿里云的镜像加速器，登录阿里云(https://cr.console.aliyun.com/#/accelerator)
 可以看到镜像加速地址如下图：
-![img.png](screenshot/202201180902.png)
+![202201180902.png](screenshot/202201180902.png)
 ```
 cd /etc/docker
 ```
@@ -270,10 +270,10 @@ docker build -t nginx:tuling .
 docker run -d -p 92:80 nginx:tuling
 ```
 4、访问 http://Docker宿主机IP:92/，可看到下图所示界面
-![img_7.png](screenshot/20220118091138.png)
+![20220118091138.png](screenshot/20220118091138.png)
 
 Dockerfile常用指令
-![img_6.png](screenshot/20220118091137.png)
+![20220118091137.png](screenshot/20220118091137.png)
 命令用途FROM基础镜像文件RUN构建镜像阶段执行命令ADD <src> <dest>添加文件，从src目录复制文件到容器的dest，其中 src可以是 Dockerfile所在目录的相对路径，也可以是一个 URL,还可以是一个压缩包COPY拷贝文件，和ADD命令类似，但不支持URL和压缩包CMD容器启动后执行命令EXPOSE声明容器在运行时对外提供的服务端口WORKDIR指定容器工作路径ENV指定环境变量ENTRYPINT容器入口， ENTRYPOINT和 CMD指令的目的一样，都是指定 Docker容器启动时执行的命令，可多次设置，但只有最后一个有效。USER该指令用于设置启动镜像时的用户或者 UID,写在该指令后的 RUN、 CMD以及 ENTRYPOINT指令都将使用该用户执行命令。VOLUME指定挂载点，该指令使容器中的一个目录具有持久化存储的功能，该目录可被容器本身使用，也可共享给其他容器。当容器中的应用有持久化数据的需求时可以在 Dockerfile中使用该指令。格式为： VOLUME["/data"]。
 注意：RUN命令在 image 文件的构建阶段执行，执行结果都会打包进入 image 文件；CMD命令则是在容器启动后执行。另外，一个 Dockerfile 可以包含多个RUN命令，但是只能有一个CMD命令。
 注意，指定了CMD命令以后，docker container run命令就不能附加命令了（比如前面的/bin/bash），否则它会覆盖CMD命令。
@@ -321,13 +321,13 @@ docker run -d -p 8761:8761 -v /log:/container-log microservice-eureka-server:0.0
 docker run -e JAVA_OPTS='-Xms1028M -Xmx1028M -Xmn512M -Xss512K -XX:MetaspaceSize=256M -XX:MaxMetaspaceSize=256M' --cap-add=SYS_PTRACE -d -p 8761:8761 microservice-eureka-server:0.0.1
 ```
 5、访问http://Docker宿主机IP:8761/，可正常显示Eureka Server首页
-![img_5.png](screenshot/20220118091136.png)
+![20220118091136.png](screenshot/20220118091136.png)
 
 ### 将微服务镜像发布到远程镜像仓库
 我们制作好了微服务镜像，一般需要发布到镜像仓库供别人使用，我们可以选择自建镜像仓库，也可以直接使用docker官方镜像仓库，这里我们选择docker官方镜像仓库：https://hub.docker.com/
 首先，我们需要在docke官方镜像仓库里注册一个账号
 然后，在linux服务器上用docker login命令登录镜像仓库
-![img_4.png](screenshot/20220118091135.png)
+![20220118091135.png](screenshot/20220118091135.png)
 要把镜像推送到镜像仓库，需要将镜像前面加个分组名(一般就是docker hub的账户名)，执行如下命令修改镜像名字
 ```
 docker tag microservice-eureka-server:0.0.1 zhuge666/microservice-eureka-server:0.0.1
@@ -336,21 +336,21 @@ docker tag microservice-eureka-server:0.0.1 zhuge666/microservice-eureka-server:
 ```
 docker push zhuge666/microservice-eureka-server:0.0.1
 ```
-![img_3.png](screenshot/20220118091134.png)
+![20220118091134.png](screenshot/20220118091134.png)
 
 我们登录到docker镜像查看下刚刚推送的镜像，这样镜像就能给别人用了
-![img_2.png](screenshot/20220118091133.png)
+![20220118091133.png](screenshot/20220118091133.png)
 
 ### Docker虚拟化原理
-![img.png](screenshot/20220118091131.png)
+![20220118091131.png](screenshot/20220118091131.png)
 传统虚拟化和容器技术结构比较：传统虚拟化技术是在硬件层面实现虚拟化，增加了系统调用链路的环节，有性能损耗；容器虚拟化技术以共享宿主机Kernel的方式实现，几乎没有性能损耗。
 docker利用的是宿主机的内核,而不需要Guest OS。因此,当新建一个容器时,docker不需要和虚拟机一样重新加载一个操作系统内核。避免了寻址、加载操作系统内核这些比较费时费资源的过程,当新建一个虚拟机时,虚拟机软件需要加载Guest OS,这个新建过程是分钟级别的。而docker由于直接利用宿主机的操作系统,则省略了这个过程,因此新建一个docker容器只需要几秒钟。
-![img_1.png](screenshot/20220118091132.png)
+![20220118091132.png](screenshot/20220118091132.png)
 
 ### Docker是如何将机器的资源进行隔离的？
 答案是联合文件系统，常见的有AUFS、Overlay、devicemapper、BTRFS和ZFS等。
 以Overlay2举例说明，Overlay2的架构图如下：
-![img.png](screenshot/202201190913.png)
+![202201190913.png](screenshot/202201190913.png)
 原理：overlayfs在linux主机上只有两层，一个目录在下层，用来保存镜像(docker)，另外一个目录在上层，用来存储容器信息。在overlayfs中，底层的目录叫做lowerdir，顶层的目录称之为upperdir，对外提供统一的文件系统为merged。当需要修改一个文件时，使用COW(Copy-on-write)将文件从只读的Lower复制到可写的Upper进行修改，结果也保存在Upper层。在Docker中，底下的只读层就是image，可写层就是Container。
 
 ### 写时复制 (CoW) 技术详解
@@ -368,15 +368,15 @@ du -sh <容器完整id>  #查看某一个容器的大小
 
 ### docker中的镜像分层技术的原理是什么呢？
 docker使用共享技术减少镜像存储空间，所有镜像层和容器层都保存在宿主机的文件系统/var/lib/docker/中，由存储驱动进行管理，尽管存储方式不尽相同，但在所有版本的Docker中都可以共享镜像层。在下载镜像时，Docker Daemon会检查镜像中的镜像层与宿主机文件系统中的镜像层进行对比，如果存在则不下载，只下载不存在的镜像层，这样可以非常节约存储空间。
-![img.png](screenshot/20220118091120.png)
-![img_1.png](screenshot/20220118091130.png)
+![20220118091120.png](screenshot/20220118091120.png)
+![20220118091130.png](screenshot/20220118091130.png)
 
 最后附一个查看容器资源使用情况的指令：
 ```
 docker stats  # 返回容器资源的实时使用情况，1秒刷新一次
 docker stats --no-stream  # 返回容器当时的资源使用情况
 ```
-![img.png](screenshot/202201180910.png)
+![202201180910.png](screenshot/202201180910.png)
 
 默认情况下，stats 命令会每隔 1 秒钟刷新一次输出的内容直到你按下 ctrl + c。下面是输出的主要内容：
 [CONTAINER]：以短格式显示容器的 ID。

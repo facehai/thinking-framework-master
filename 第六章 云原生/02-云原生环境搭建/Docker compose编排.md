@@ -41,7 +41,7 @@ version: '3.8'
 ```
 docker-compose up （后面加-d可以后台启动)
 ```
-![img.png](img.png)
+![202201180855567.png](screenshot/202201180855567.png)
 
 如上图，compose启动会做几件事：
 - 1、创建一个默认的网络app_default，默认以compose所在文件目录名加"_default"命名，compose内的所有容器都会加入此网络，可以相互用服务名访问。
