@@ -109,8 +109,11 @@
   </tr>
 </table>
 
-七、百万年薪同心圆方法论
+
+### 七、百万年薪同心圆方法论
+
 ![202202121000.png](screenshot/202202121000.png)
+
 **1、道、法、术、器**
 
 职业规律
@@ -150,9 +153,5 @@
 ## 联系方式
 
 * Github: <https://github.com/facehai/thinking-framework-master>
-
-## 开源项目
-
-* MQTT协议中文版: <https://github.com/mcxiaoke/mqtt>
 
 ------
