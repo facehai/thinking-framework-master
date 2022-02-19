@@ -73,8 +73,8 @@
     <td><a href="#">GO编程</a></td>
   </tr>
   <tr>
-    <td>第四章: 数据挖掘</td>
-    <td><a href="#">数据挖掘</a></td>
+    <td>第四章: 大数据</td>
+    <td><a href="#">大数据</a></td>
   </tr>
   <tr>
     <td>第五章: AI智能</td>
